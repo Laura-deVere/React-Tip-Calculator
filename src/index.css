@@ -1,14 +1,148 @@
+/*COLORS*/
+/*white: #FDFEFD
+extra-light: #8FD7CA 
+light: #52BCAA
+med: #1D9A7C 
+dark: #2D695E*/
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	background-color: #8FD7CA ;
+	font-family: 'Raleway', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+	width: 300px;
+	margin: 0 auto;
+	background-color: #52BCAA;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-2 {
+	width: 50%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.results {
+	background-color: #fff;
+	width: 80%;
+	color: #8FD7CA;
+	height: 191px;
+	justify-content: space-evenly;
+	padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cost-pp {
+	width: 100%;
+	text-align: right;
+	display: 
+}
+
+
+/*INPUTS*/
+.bill-total, 
+.guest-count,
+.tip-percent, 
+.tip-total {
+	width: 48%;
+	color: #FDFEFD;
+	background-color: #8FD7CA;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.bill-total {
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bill-total input {
+	background-color: #8FD7CA;
+	color: #FDFEFD;
+	border:none;
+	width: 60%;
+	text-align: center;
+	height: 20px;
+}
+
+.bill-total input:focus {
+	outline: none;
+}
+
+
+.guest-count {
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.guest-count i {
+	cursor: pointer;
+}
+
+.guest-count div:nth-child(2) {
+	background-color: #FDFEFD;
+	color: #8FD7CA;
+	height: 60px;
+	width: 60px;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tip-percent {
+	width: 65%;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.tip-percent ul {
+	width: 90%;
+}
+
+.tip-total {
+	width: 30%;
+	justify-content: center;
+	text-align: center;
+}
+
+
+/*KEYPAD*/
+.keypad li {
+	width: 32%;
+	cursor: pointer;
+}
+.keypad li button {
+	width: 100%;
+	height: 40px;
+	background-color: #52BCAA;
+	color: #FDFEFD;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.keypad li button:focus {
+	outline: none;
 }
