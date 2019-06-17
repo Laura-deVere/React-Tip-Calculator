@@ -1,3 +1,9 @@
+Tip and Bill Calculator built using React.
+
+The calculator will take an input of the Bill Total, allows for tip percentage to be calculated by the number of guests selected.
+
+Returns the total Per Person with a breakdown of the amount for the bill and tip.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
