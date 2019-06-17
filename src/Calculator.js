@@ -90,7 +90,6 @@ class Calculator extends Component {
 
 	getTipPercentage(i) {
 		let newState = this.state.percentages[i];
-		console.log(newState);
 		this.setState({
 			tipPercent: newState
 		}, function() {
@@ -104,14 +103,8 @@ class Calculator extends Component {
 		if(!Number.isNaN(newBillTotal)) {
 			let newTipTotal, newCostPP;
 			newTipTotal = parseFloat(newBillTotal * this.state.tipPercent);
-			// newTipTotal = newTipTotal.toFixed(2);
 			newCostPP = newBillTotal + newTipTotal; 
 			newCostPP = newCostPP / this.state.numberOfPeople;
-			// newCostPP = newCostPP.toFixed(2);
-			console.log(newCostPP);
-			console.log(newTipTotal);
-			console.log(newBillTotal);
-			console.log(this.state.billTotal);
 	    this.setState({
 			tipTotal: newTipTotal,
 			costPP: newCostPP
